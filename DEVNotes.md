@@ -2944,7 +2944,7 @@ _output:
 * Find the folder that contains kubelet, kube-discovery etc to a folder and PATH contains it
 * Make need root priviledges (/usr/local/bin/kubectl?)
 * export K8S_VERSION=vYOUR_VERSION
-* 
+* Start Docker
 ```
 docker run \
 --volume=/:/rootfs:ro \
