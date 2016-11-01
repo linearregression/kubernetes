@@ -19,6 +19,8 @@ git reset--hard origin/master
 
 # Build
 make 
+or
+make release-skip-tests quick-release
 
 # Built binary
 _output:
@@ -2957,7 +2959,7 @@ docker run \
 --privileged=true \
 --name=kubelet \
 -d \
-gcr.io/google_containers/hyperkube-amd64:${K8S_VERSION} <<< is this just a tag? \
+gcr.io/google_containers/hyperkube-amd64:${K8S_VERSION} <<< is this just a tag or form make release? \
 /hyperkube kubelet \
 --containerized \
 --hostname-override="127.0.0.1" \
